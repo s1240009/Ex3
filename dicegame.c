@@ -3,7 +3,13 @@
 #include<stdlib.h>
 int main(){
   int die1,die2,value;
+  char name[100];
   srand((unsigned)time(NULL));
+
+  printf("What is your name?\n");
+  scanf("%s",name);
+  printf("Hello, %s\n",name);
+  
   printf("Rolling the dice...\n");
   die1=rand()%6+1;
   die2=rand()%6+1;
